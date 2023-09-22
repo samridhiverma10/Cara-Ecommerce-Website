@@ -1,6 +1,7 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+  
+  @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
   margin: 0;
@@ -50,6 +51,7 @@ p {
 .section-m1 {
   margin: 40px 0;
 }
+
 
 button.normal{
 font-size: 14px;
@@ -242,7 +244,7 @@ padding-bottom: 15px;
 
 #product1 .pro-container{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding-top:20px ;
   flex-wrap: wrap;
 
@@ -501,6 +503,7 @@ border: 1px solid #088178;
   border-bottom-left-radius: 0;
 }
 
+/* footer-section */
 footer{
   display: flex;
   flex-wrap: wrap;
@@ -647,6 +650,11 @@ footer .follow i:hover, footer a:hover{
   line-height: 25px;
 }
 
+.single-pro-details .product__list .list_item {
+  margin-top: 5px;
+  text-decoration: none;
+  list-style-type: none;
+}
 
 
 #prodetails .single-pro-image{
@@ -1125,6 +1133,7 @@ margin-bottom: 30px;
 #form-details form{
   padding: 20px;
 }
+
 
 }
 

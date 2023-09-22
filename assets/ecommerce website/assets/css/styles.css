@@ -1,0 +1,364 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Spartan:wght@400;500;600;700&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height:4rem ;
+
+  /*========== Colors ==========*/
+  /* Color mode HSL(hue, saturation, lightness) */
+  --first-color: hsl(176,88%,27%);
+  --first-color-alt: hsl(129,44%,94%) ;
+  --second-color: hsl(34,94%,87%);
+  --title-color:hsl(0,0%,13%) ;
+  --text-color: hsl(154,13%,32%);
+  --text-color-light:hsl(60,1%,56%) ;
+  --body-color: hsl(0,0%,100%);
+  --container-color:hsl(0,0%,93%) ;
+  --border-color:hsl(129,36%,85%) ;
+  --border-color-alt:hsl(113,15%,90%) ;
+
+  /*========== Font and typography ==========*/
+  /* .5rem = 8px | 1rem = 16px ... */
+  --body-font: 'Lato' , sans-serif;
+  --second-font: 'League Spartan' , sans-serif;
+  --big-font-size: 3.5rem;
+  --h1-font-size: 2.75rem;
+  --h2-font-size: 2rem ;
+  --h3-font-size: 1.75rem;
+  --h4-font-size: 1.375rem;
+  --large-font-size: 1.125rem ;
+  --normal-font-size:1rem ;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.75rem;
+  --tiny-font-size: 0.6875rem;
+
+  /*========== Font weight ==========*/
+  --weight-400: 400;
+  --weight-500: 500 ;
+  --weight-600: 600;
+  --weight-700: 700;
+
+  /*========== Transition ==========*/
+  --transition: cubic-bezier(0,0,0.05,1);
+}
+
+/* Responsive typography */
+@media screen and (max-width: 1200px) {
+  :root {
+    --big-font-size: ;
+    --h1-font-size: ;
+    --h2-font-size: ;
+    --h3-font-size: ;
+    --h4-font-size: ;
+    --large-font-size: ;
+    --normal-font-size: ;
+    --small-font-size: ;
+    --smaller-font-size: ;
+    --tiny-font-size: ;
+  }
+}
+
+/*=============== BASE ===============*/
+
+
+/* input,textarea,body{
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: var(--weight-400);
+} */
+
+
+body{
+  background-color: var(--body-color);
+}
+
+/* h1,h2,h3,h4{
+  font-family: var(--second-font);
+  color: var(--title-color);
+  font-weight: var(--weight-600);
+
+} */
+
+
+ul{
+  list-style: none;
+}
+
+a{
+text-decoration: none;
+}
+
+p{
+  line-height: 1.5rem;
+}
+
+.img1{
+  max-width: 100%;
+
+}
+
+/* button,textarea,input{
+  background-color: transparent;
+  border: none;
+  outline: none
+  ;
+} */
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container1{
+  max-width: 1320px;
+  margin-inline: auto;
+  padding-inline: 0.75rem;
+}
+.grid{
+  display: grid;
+  gap: 1.5rem;
+}
+.section1{
+  padding-block: 2rem;
+}
+
+.section-title{
+  font-size: var(--h3-font-size);
+  margin-bottom: 1.5rem;
+  margin-left: 20px;
+  margin-top: 19px;
+}
+
+.section-title span{
+  color: var(--first-color);
+}
+
+.swiper-wrapper {
+  display: flex;
+  margin-left: 10px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.flex1{
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.new-price{
+  color: var(--first-color);
+  font-weight: var(--weight-600);
+}
+
+.new-price{
+  color: var(--text-color-light);
+  font-weight: var(--small-font-size);
+  text-decoration: line-through;
+}
+/*=============== HEADER & NAV ===============*/
+
+/* Active link */
+
+/*=============== HOME ===============*/
+
+/*=============== BUTTONS ===============*/
+
+/*=============== CATEGORIES ===============*/
+
+.categories{
+  overflow: hidden;
+
+}
+.category-item {
+  text-align: center;
+  border: 1px solid var(--border-color);
+  padding: 0.625rem 0.625rem 1.25rem;
+  border-radius: 1.25rem;
+}
+
+.category-img{
+  border-radius: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.category-title{
+  color: var(--text-color);
+  font-size: var(--small-font-size);
+}
+
+/* Swiper class */
+
+.swiper{
+  overflow: initial;
+  margin-left: 104px;
+}
+.swiper-button-next::after,.swiper-button-prev::after{
+content: '';
+}
+.swiper-button-next,.swiper-button-prev{
+top: -1.875rem;
+background-color: var(--first-color-alt);
+border: 1px solid var(--border-color);
+width: 40px;
+height: 40px;
+border-radius: 50%;
+color: var(--first-color);
+font-size: var(--tiny-font-size);
+}
+
+.swiper-button-prev{
+  left: initial;
+  right: 2.9rem;
+  margin-right: 20px;
+}
+
+.swiper-button-next{
+  right: 0;
+  margin-right: 20px;
+}
+
+/*=============== PRODUCTS ===============*/
+
+/* Active Tab */
+
+/* Product Hover */
+
+/*=============== DEALS ===============*/
+
+
+
+/*=============== NEW ARRIVALS ===============*/
+
+/*=============== SHOWCASE ===============*/
+.showcase-container{
+  grid-template-columns: repeat(4,1fr);
+}
+.showcase-wrapper .section-title{
+font-size: var(--normal-font-size);
+border-bottom: 1px solid var(--border-color-alt);
+padding-bottom: 0.75rem;
+margin-bottom: 2rem;
+position: relative;
+}
+
+.showcase-wrapper .showcase-title::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1.3px;
+  width: 50px;
+  height: 2px;
+  background-color: var(--first-color);
+}
+
+.showcase-item{
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+
+.showcase-item:not(:last-child)
+{
+  margin-bottom: 1.5rem;
+}
+
+.showcase-img {
+  width: 86px;
+  border-radius: 3px;
+
+}
+
+.showcase-content{
+  width: calc(100% -110px);
+}
+
+.showcase-title{
+  font-size: var(--small-font-size);
+  font-weight: var(--weight-500);
+  white-space: nowrap;
+  overflow: hidden ;
+  text-overflow: ellipsis;
+  margin-bottom: 0.5rem;
+}
+/*=============== NEWSLETTER ===============*/
+
+/*=============== FOOTER ===============*/
+
+/*=============== BREADCRUMBS ===============*/
+
+/*=============== SHOP ===============*/
+
+/*=============== DETAILS ===============*/
+
+/*=============== DETAILS INFO & REVIEWS ===============*/
+
+/*=============== CART ===============*/
+
+/*=============== CART OTHERS ===============*/
+
+/*=============== WISHLIST ===============*/
+
+/*=============== CHECKOUT ===============*/
+
+/*=============== COMPARE ===============*/
+
+/*=============== LOGIN & REGISTER ===============*/
+
+/*=============== ACCOUNTS ===============*/
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 1400px) {
+  .container1{
+    max-width: 1140px;
+  }
+
+  .products-container,
+  .showcase-container{
+grid-template-columns: repeat(3,1fr);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+/* For medium devices */
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+/* For small devices */
+@media screen and (max-width: 576px) {
+}
+
+@media screen and (max-width: 350px) {
+}
+
+
+@media screen and (max-width: 799px) {
+  .showcase-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Media query for smaller screens (mobile devices) */
+@media screen and (max-width: 477px) {
+  .showcase-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .showcase-container {
+      grid-template-columns: 1fr;
+      gap: 10px;
+  }
+
+  .showcase-title {
+      font-size: 0.9rem;
+  }
+
+  /* Additional adjustments for screens up to 300px wide */
+}
